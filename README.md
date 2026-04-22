@@ -6,9 +6,9 @@
 
 ## Research Overview
 
-This study investigates whether pre-campaign spending trajectory features - the direction, velocity, and category composition of a household's purchasing behaviour in the weeks before a campaign - predict promotional coupon redemption better than static RFM features alone.
+This study explores how changes in household purchasing behaviour prior to a promotional campaign can improve the targeting of coupons in the Retail and Consumer Packaged Goods (CPG) sector. While traditional approaches rely on static summaries of past purchases, they often overlook whether a household’s spending is increasing, declining, or shifting across product categories.
 
-A secondary contribution is an LLM-assisted adaptive window selection agent that selects the optimal lookback window (4, 8, or 12 weeks) per household based on its individual data characteristics, testing whether household-specific window selection further improves prediction over any fixed window strategy.
+The research investigates whether these behavioural patterns provide stronger signals for identifying households likely to respond to promotions. It also examines whether tailoring the observation period to individual purchasing behaviour, rather than using a fixed time window, leads to more accurate and context-sensitive predictions.
 
 **Domain:** Retail & Consumer Packaged Goods (CPG)
 
@@ -58,7 +58,7 @@ Source: https://www.dunnhumby.com/source-files/
 | Archetype Discovery | K-Means clustering, silhouette score optimisation | RQ1 |
 | Model Comparison | Logistic Regression, Random Forest, XGBoost, LightGBM | RQ2 |
 | Incremental AUC Test | DeLong's test, SHAP feature importance | RQ3 |
-| Adaptive Window Agent | OpenAI GPT-4.1 API, temperature=0.0, content analysis | RQ4 |
+| Adaptive Window Agent | OpenAI GPT-4.1-mini API, temperature=0.0, content analysis | RQ4 |
 
 **Evaluation design:** Temporal campaign split (earliest ~21 campaigns = train, latest ~9 = test). Random split run as robustness check.
 
