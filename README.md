@@ -35,6 +35,7 @@ qm640-spending-trajectory-capstone/
 │
 ├── notebooks/
 │   └── eda.ipynb 
+│   └── modelling.ipynb 
 │
 ├── src/
 │   └── feature_engineering.py
